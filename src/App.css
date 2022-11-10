@@ -1,0 +1,47 @@
+body{
+  background-color: rgb(125, 129, 129);
+}
+
+h1{
+  color:aliceblue;
+  font-size: 30pt;
+  font-style: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 50px auto;
+  height: 70px;
+  width: 1500px;
+  border-bottom: 2px solid black;
+  }
+
+  #BigDiv {
+text-align: center;
+margin: 50px auto;
+
+  }
+
+  #BigDiv button{
+    padding: 15px ;
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+
+  }
+
+div {
+    text-align: center;
+    margin: 25px auto;
+    }
+
+/*button {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+  }*/
+
+
+  #App{
+    background-color: rgb(167, 172, 172);
+  }
