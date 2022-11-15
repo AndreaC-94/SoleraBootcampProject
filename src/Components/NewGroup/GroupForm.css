@@ -1,11 +1,13 @@
 #textDiv input[type="number"],
 #textDiv input[type="text"],
 #textDiv button[type="submit"] {
+    text-align: center;
+    margin-top: 20px;
     margin-right: 20px;
     margin-left: 5px;
     border-radius: 20px;
-    
-}
+    font-size: 14pt;
+    }
 
 #textDiv
 {

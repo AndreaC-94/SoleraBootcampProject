@@ -7,9 +7,9 @@ const Group = (props) => {
     const assignmentCompleted = props.assignment
 
     return <div>
-            <div id="name" name="name" >{groupName}</div>
-            <div id="points" name="points" >{points}</div>
-            <div id="assignments" name="assignments" >{assignmentCompleted}/total</div>
+            <div id="name">{groupName}</div>
+            <div id="points">{points}</div>
+            <div id="assignments">{assignmentCompleted}/10</div>
         </div>
 }
 

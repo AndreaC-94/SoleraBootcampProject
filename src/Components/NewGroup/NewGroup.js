@@ -1,9 +1,17 @@
 import GroupForm from "./GroupForm"
 
-const newGroup = () => {
+const newGroup = (props) => {
+
+    const saveGroupDataHandler = (enteredGroupData) => {
+        const groupData = {
+            ...enteredGroupData,
+            id: Math.random().toString()
+        }
+        props.onAddGroup(groupData)
+    }
 
     return <div>
-    <GroupForm></GroupForm>
+    <GroupForm onSaveGroupData={saveGroupDataHandler}/>
     </div>
 }
 

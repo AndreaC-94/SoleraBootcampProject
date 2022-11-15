@@ -1,74 +1,42 @@
-body{
+body {
   background-color: rgb(125, 129, 129);
 }
 
-h1{
-  color:aliceblue;
-  font-size: 30pt;
-  font-style: bold;
-  margin-bottom: 30px;
-  text-align:center;
-  height: 70px;
-  margin: 50px auto;
-  width: 1500px;
-  border-bottom: 2px solid black;
-  }
+.BigDiv {
+  height: 500px;
+  width: 1300px;
+  background-color: rgb(125, 129, 129);
+  border-radius: 20px;
+}
 
-  #BigDiv {
-text-align: center;
-margin: 50px auto;
+.ResultsDiv {
+  /*visibility: hidden;*/
+  height: 150px;
+  width: 1300px;
+  background-color: rgb(125, 129, 129);
+  border-radius: 20px;
+  margin-top: 50px;
+}
 
-  }
-  #BigDiv button{
-    text-align: center;
-    margin-right: 20px;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-      }
-
-  #BigDiv GroupCard{
-    padding: 15px ;
-    border-radius: 20px;
-    margin-right: 10px;
-    width: 200px;
-    height: 200px;
-
-  }
+.BigDiv button {
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 20px;
+}
 
 div {
-    text-align: center;
-    margin: 25px auto;
-    }
+  text-align: center;
+  margin: 25px auto;
+}
 
-  #App{
-    background-color: rgb(167, 172, 172);
-  }
-
-  #sideButtons{
-    position:absolute;
-    width: 500px;
-    height: 50px;
-    top: 45px;
-    right:-20px;
-    }
-
-  #addGroup, 
-  #addAssignment,
-  #addPoints{
-    border-radius: 20px;
-    font-size: 16pt;
-    height: 30px;
-    width: 140px;
-    background-color: rgb(125, 129, 129);
-    color:aliceblue;
-    margin-right: 5px;
-    
-  }
-
-  #solera{
-    position: absolute;
-    top:-40px;
-    left: 100px;
-  }
-
+.App {
+  background-color: rgb(167, 172, 172);
+  text-align: center;
+  margin: 50px auto;
+  height: 1500px;
+  width: 1500px;
+  border-radius: 20px;
+}

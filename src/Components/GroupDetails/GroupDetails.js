@@ -1,4 +1,4 @@
-
+import "./GroupDetails.css";
 
 const GroupDetails = (props) => {
 
@@ -7,29 +7,24 @@ const GroupDetails = (props) => {
     const tasks = props.tasks
     const tasksScores = props.tasksScores
  
-    const listItems = tasks.map((task) =>
-    
-    <div class='child'><li>{task}</li>
-    </div>
-  );
+    const listItems = tasks.map((task) =>  
+    <div>
+      <li>{task}</li>
+    </div>);
   
   const listItems2 = tasksScores.map((score) =>
-  <div class='child'><li>{score}</li></div>
-  
-);
+    <div>
+      <li>{score}</li>
+    </div>);
 
 
     return <div>
-            <h1>Solera Teams</h1>
+            <div>
             <span>{groupName} </span>
             <span>{points} Points</span>
-            
+            </div>
             <ul>{listItems}</ul>
             <ul>{listItems2}</ul>
-            
-
-           
-    
         </div>
 }
 

@@ -1,5 +1,3 @@
-import Group from "./Components/Group/Group";
-import GroupCard from "./Components/Group/GroupCard";
 import "./App.css";
 import NewGroup from "./Components/NewGroup/NewGroup.js";
 import AddPoints from "./Components/AddPoints/AddPoints";
@@ -93,4 +91,15 @@ const App = (props) => {
   </div>
 }
 
+import BigDiv from "./Components/BigDiv/BigDiv";
+import Header from "./Components/Header/Header";
+
+const App = () => {
+  return (
+    <>
+      {/* <Header /> */}
+      <BigDiv />
+    </>
+  );
+}
 export default App;

@@ -1,0 +1,38 @@
+.headerDiv {
+    margin-bottom: 30px;
+    height: 100px;
+    width: 1500px;
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    
+    }
+  
+  .headerDiv h1{
+      color:aliceblue;
+      font-size: 24pt;
+      font-style: bold;
+    }
+  
+  .sideButtons{
+      border-radius: 20px;
+      font-size: 16pt;
+      height: 30px;
+      width: 140px;
+      background-color: rgb(125, 129, 129);
+      color:aliceblue;
+      margin-right: 5px;
+      
+    }
+
+    
+  .solera{
+    width: 500px;
+    height: 100px;
+    }
+
+  .soleraImg{
+    position: absolute;
+    top:-30px;
+    left: 150px; 
+  }

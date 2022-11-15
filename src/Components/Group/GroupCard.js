@@ -15,9 +15,7 @@ const GroupCard = (props) => {
     }
 
     return(
-        <button onSubmit={showGroupInfo}>
             <Group name={props.name} points={props.points} assignment={props.assignment}/>
-        </button>
     )
 }
 export default GroupCard
