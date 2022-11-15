@@ -11,7 +11,7 @@ const addPointsForm = () => {
             <label>Description </label>
             <input type="text" min="0" id="description" required="0"></input>
             <button type="submit">Add Points</button>
-            </div>
+        </div>
         
     </form>
 }
