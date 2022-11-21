@@ -41,13 +41,8 @@ function AddPointsForm(props) {
             <input type="text" min="0" required="0" onChange={DescriptionChangeHandler} value={enteredDescription}></input><p></p>
             <button type="submit">Add Points</button>
         </div>
-<<<<<<< HEAD
         
     </form>
-=======
-
-    </form>;
->>>>>>> master
 }
 
 export default AddPointsForm;
