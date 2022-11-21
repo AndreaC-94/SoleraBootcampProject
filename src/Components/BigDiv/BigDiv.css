@@ -1,0 +1,30 @@
+.BigDiv {
+    height: 500px;
+    width: 1300px;
+    background-color: rgb(125, 129, 129);
+    border-radius: 20px;
+  }
+  
+  .ResultsDiv {
+    height: 150px;
+    width: 1300px;
+    background-color: rgb(125, 129, 129);
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  
+  .BigDiv button {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  div {
+    text-align: center;
+    margin: 25px auto;
+  }
+
+  

@@ -1,11 +1,16 @@
 import AddPointsForm from "./AddPointsForm";
 
-const addPoints = () => {
+const addPoints = (props) => {
+    const saveAddPointsDataHandler = (enteredAddPointsData) =>{
+        const addpoints = {
+            ...enteredAddPointsData,
+            id: Math.random().toString()
+        }
+        props.onAddPoints(addpoints)
+    }
    
     return <div>
-        <div>
-        <AddPointsForm></AddPointsForm>
-        </div>
+        <AddPointsForm onSaveAddPointsData = {saveAddPointsDataHandler}/>
     </div>
 }
 

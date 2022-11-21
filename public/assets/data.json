@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Group 1",
+    "points": "100",
+    "assignment": "5",
+    "tasks": ["HTML", "React", "JS", "c++"],
+    "score": [11, 22, 33, 41]
+  },
+  {
+    "id": 2,
+    "name": "Group 2",
+    "points": "150",
+    "assignment": "8",
+    "tasks": ["HTML", "React", "JS", "c++"],
+    "score": [44, 14, 54, 56]
+  },
+  {
+    "id": 3,
+    "name": "Group 3",
+    "points": "130",
+    "assignment": "6",
+    "tasks": ["HTML", "React", "JS", "c++"],
+    "score": [77, 33, 76, 99]
+  },
+  {
+    "id": 4,
+    "name": "Group 4",
+    "points": "95",
+    "assignment": "3",
+    "tasks": ["HTML", "React", "JS", "c++"],
+    "score": [33, 66, 32, 21]
+  },
+  {
+    "id": 5,
+    "name": "Group 3",
+    "points": "130",
+    "assignment": "6",
+    "tasks": ["HTML", "React", "JS", "c++"],
+    "score": [77, 33, 76, 99]
+  },
+  {
+    "id": 6,
+    "name": "Group 3",
+    "points": "130",
+    "assignment": "6",
+    "tasks": ["HTML", "React", "JS", "c++"],
+    "score": [77, 33, 76, 99]
+  }
+]

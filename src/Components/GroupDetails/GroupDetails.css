@@ -1,5 +1,37 @@
-ul {
-    display: inline-block;
-    *display: inline;
-    zoom: 1
+
+
+.textDiv{
+        color:rgb(86, 87, 87);
+        font-size: 15pt;
+        font-weight: bold;
+        text-align: left;
 }
+
+.labelDiv{
+        font-size: 18pt;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.573);
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .DetailsDiv{
+        display: grid;
+        grid-template-columns: 213px 213px 213px;
+        background-color: rgb(125, 129, 129);
+        border-radius: 25px;
+        font-size: 18pt;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.573);
+    }
+
+    .insideDiv{
+        border-bottom: rgba(0, 0, 0, 1);
+        border-radius: 25px;
+    }
+    
+    .DetailsDiv__check {
+        align-content: left;
+        display: grid;
+        grid-template-columns: 100px 100px;
+    }

@@ -1,18 +1,26 @@
-#textDiv input[type="number"],
-#textDiv input[type="text"],
-#textDiv button[type="submit"] {
+.textDiv button[type="submit"],
+.textDiv input[type="text"]
+{
     text-align: center;
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 5px;
     border-radius: 20px;
-    font-size: 14pt;
+    font-size: 13pt;
+    width: 150px;
+    font-weight: bold;
     }
 
-#textDiv
+.textDiv
 {
+    color:rgb(86, 87, 87);
     font-size: 15pt;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-style:bold;
+    font-weight: bold;
 }
+.labelDiv{
+    font-size: 18pt;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.573);
+}
+
 

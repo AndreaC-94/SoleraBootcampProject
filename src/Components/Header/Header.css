@@ -17,11 +17,12 @@
   .sideButtons{
       border-radius: 20px;
       font-size: 16pt;
-      height: 30px;
-      width: 140px;
+      height: 32px;
+      width: 150px;
       background-color: rgb(125, 129, 129);
       color:aliceblue;
       margin-right: 5px;
+      font-style: bold;
       
     }
 
