@@ -1,33 +1,21 @@
 import "./GroupForm.css";
 import React, { useState } from 'react'
 
-
 const GroupForm = (props) => {
     const [enteredName, setEnteredName] = useState("");
-
     const nameChangeHandler = (event) => {
         setEnteredName(event.target.value);
     }
- 
-
     const submitHandler = (event) => {
-        
-      fetch('http://localhost:8081/createGroup/'+enteredName, {  
-
-      method: 'POST', 
-      mode: 'cors', 
-     
-
-    })
+        fetch('http://localhost:8081/createGroup/' + enteredName, {
+            method: 'POST',
+            mode: 'cors',
+        })
         console.log(enteredName)
-
         const groupData = {
             name: enteredName
         }
-       
-      
         setEnteredName('');
-        
     }
 
     return <form onSubmit={submitHandler}>

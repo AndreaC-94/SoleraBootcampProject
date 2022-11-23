@@ -3,17 +3,13 @@ import Header from '../Header/Header';
 import GroupDetails from '../GroupDetails/GroupDetails';
 import Group from '../Group/Group';
 import './BigDiv.css';
-
 import Popup from '../Popup/Popup';
-
 
 let groupList = [];
 
 // console.log(groupList, " groupList");
 
-
 let idNumber;
-
 
 //get tasks from first group of groupList
 // const task1 = groupList[0].tasks;
@@ -46,7 +42,6 @@ let idNumber;
 //  {id: 6, name: 'Group 3', points: '130', assignment:'6', tasks:task3, score:tasksScore3,isDone:taskIsDone3}];
 
 export default function BigDiv() {
-
   const [isShown, setIsShown] = useState(false);
   const [buttonPopup, setButtonPopup] = useState(false);
   const [groupList, setGroupList] = useState([]);
@@ -85,11 +80,9 @@ export default function BigDiv() {
     };
   };
 
-
   return (
     <>
       <div className="BigDiv" id="BigDiv">
-
         {groupList.map((groupList) =>
         (<button onClick={handleClick} id={groupList.id} key={groupList.id}>
           {console.log(groupList)}
@@ -110,7 +103,6 @@ export default function BigDiv() {
           tasks={groupList[idNumber - 1]?.tasks}
         />
       </Popup>
-
     </>
   )
 }

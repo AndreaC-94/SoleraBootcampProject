@@ -5,7 +5,6 @@ function AddPointsForm(props) {
     const [enteredPoints, setEnteredPoints] = useState("");
     const [enteredTeam, setEnteredTeam] = useState("");
     const [enteredDescription, setEnteredDescription] = useState("");
-
     const PointsChangeHandler = (event) => {
         setEnteredPoints(event.target.value);
     };
@@ -15,7 +14,6 @@ function AddPointsForm(props) {
     const DescriptionChangeHandler = (event) => {
         setEnteredDescription(event.target.value);
     };
-
     const submitHandler = (event) => {
         event.preventDefault();
 

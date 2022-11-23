@@ -1,18 +1,12 @@
 import "./AddAssignmentForm.css";
 import React, { useState } from 'react';
 
-
-
 function AddAssignmentForm(props) {
-
-
     const [enteredPoints, setEnteredPoints] = useState(0);
     const [enteredName, setEnteredName] = useState("");
     const [enteredDescription, setEnteredDescription] = useState("");
-
-
-     const PointsChangeHandler = (event) => {
-         setEnteredPoints(event.target.value);
+    const PointsChangeHandler = (event) => {
+        setEnteredPoints(event.target.value);
     };
     const NameChangeHandler = (event) => {
         setEnteredName(event.target.value);
@@ -20,9 +14,6 @@ function AddAssignmentForm(props) {
     const DescriptionChangeHandler = (event) => {
         setEnteredDescription(event.target.value);
     };
-
-
-
     const submitHandler = (event) => {
         event.preventDefault();
         const assignData = {
@@ -31,21 +22,22 @@ function AddAssignmentForm(props) {
             description: enteredDescription
         };
         console.log(assignData);
-        
-        fetch('http://localhost:8081/assignment/createAssignment', 
-        {
-            method: 'POST',
-            mode: 'cors',
-            body: JSON.stringify(assignData),
-            headers: {
-                'Content-Type': 'application/json',
-              }
-        });
-        
+
+        fetch('http://localhost:8081/assignment/createAssignment',
+            {
+                method: 'POST',
+                mode: 'cors',
+                body: JSON.stringify(assignData),
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+
         setEnteredPoints('');
         setEnteredName('');
         setEnteredDescription('');
     };
+
     return <form onSubmit={submitHandler}>
         <div className="textDiv">
             <h1>Add assignments to all groups</h1><p></p>
@@ -57,7 +49,6 @@ function AddAssignmentForm(props) {
             <input type="text" onChange={DescriptionChangeHandler} value={enteredDescription}></input><p></p>
             <button type="submit" className="Button">Add Points</button>
         </div>
-
     </form>;
 }
 

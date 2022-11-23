@@ -1,7 +1,6 @@
 import "./Group.css";
 
 const Group = (props) => {
-
     const groupName = props.name
     const points = props.points
     const assignmentCompleted = props.assignment
