@@ -1,18 +1,13 @@
 // import '../../App.css';
-import React, { useState } from 'react'
 import "./Header.css"
 import solera from "../../Images/solera.svg";
-import Popup from "../Popup/Popup.js";
 import ButtonGroup from "../ButtonGroup/ButtonGroup.mjs";
+import PopupButton from "../PopupButton/PopupButton.mjs"
 import GroupForm from '../NewGroup/GroupForm.js';
 import AddPoints from "../AddPoints/AddPoints.js";
 import AddAssignmentForm from "../AddAssignment/AddAssignmentForm.js";
 
 function Header() {
-  const [buttonPopup, setButtonPopup] = useState(false);
-  const [buttonPopupPoint, setButtonPopupPoint] = useState(false);
-  const [buttonPopupAnotherPoint, setButtonPopupAnotherPoint] = useState(false);
-
   return (
     <div className="headerDiv">
       <a href="http://www.localhost:3000">
@@ -20,18 +15,9 @@ function Header() {
       </a>
       <h1>Solera Teams Scores</h1>
       <ButtonGroup>
-        <button onClick={() => setButtonPopup(true)} id="addGroup" className="sideButtons" > Group </button>
-        <Popup trigger={buttonPopup} setTrigger={setButtonPopup} id={Popup}>
-          <GroupForm />
-        </Popup>
-        <button onClick={() => setButtonPopupAnotherPoint(true)} id="addAssignment" className="sideButtons"> Assignments </button>
-        <Popup trigger={buttonPopupAnotherPoint} setTrigger={setButtonPopupAnotherPoint} id={Popup}>
-          <AddAssignmentForm />
-        </Popup>
-        <button onClick={() => setButtonPopupPoint(true)} id="addPoints" className="sideButtons"> Points </button>
-        <Popup trigger={buttonPopupPoint} setTrigger={setButtonPopupPoint} id={Popup}>
-          <AddPoints />
-        </Popup>
+        <PopupButton buttonName="Groups" isVisible={false}><GroupForm /></PopupButton>
+        <PopupButton buttonName="Assignments" isVisible={false}><AddAssignmentForm /></PopupButton>
+        <PopupButton buttonName="addPoints" isVisible={false}><AddPoints /></PopupButton>
       </ButtonGroup>
     </div>);
 }
