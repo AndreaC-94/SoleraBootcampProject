@@ -1,11 +1,11 @@
 // import '../../App.css';
-import solera from "../../Images/solera.svg";
-import "./Header.css"
-import Popup from "../Popup/Popup.js";
 import React, { useState } from 'react'
+import "./Header.css"
+import solera from "../../Images/solera.svg";
+import Popup from "../Popup/Popup.js";
+import ButtonGroup from "../ButtonGroup/ButtonGroup.mjs";
 import GroupForm from '../NewGroup/GroupForm.js';
 import AddPoints from "../AddPoints/AddPoints.js";
-import ButtonGroup from "../ButtonGroup/ButtonGroup.mjs";
 import AddAssignmentForm from "../AddAssignment/AddAssignmentForm.js";
 
 function Header() {
