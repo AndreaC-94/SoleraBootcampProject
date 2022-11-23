@@ -5,6 +5,7 @@ import Popup from "../Popup/Popup.js";
 import React, { useState } from 'react'
 import GroupForm from '../NewGroup/GroupForm.js';
 import AddPoints from "../AddPoints/AddPoints.js";
+import ButtonGroup from "../ButtonGroup/ButtonGroup.mjs";
 import AddAssignmentForm from "../AddAssignment/AddAssignmentForm.js";
 
 function Header() {
@@ -18,7 +19,7 @@ function Header() {
         <div className="solera"><img src={solera} alt="solera logo" height="250" width="500" className="soleraImg"></img></div>
       </a>
       <h1>Solera Teams Scores</h1>
-      <div className="sideButtonsDiv">
+      <ButtonGroup>
         <button onClick={() => setButtonPopup(true)} id="addGroup" className="sideButtons" > Group </button>
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup} id={Popup}>
           <GroupForm />
@@ -31,7 +32,7 @@ function Header() {
         <Popup trigger={buttonPopupPoint} setTrigger={setButtonPopupPoint} id={Popup}>
           <AddPoints />
         </Popup>
-      </div>
+      </ButtonGroup>
     </div>);
 }
 
